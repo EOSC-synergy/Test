@@ -6,11 +6,12 @@ config:
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Sty:
     repos:
       this_repo:
         commands:
-        - flake8 . .gitlab .sqa .LICENSES docs tests
-        container: qc.sty_breezy-green-olm
+        - flake8 hifis_surveyval
+        container: qc.sty_scaly-azure-albatross
 timeout: 5400

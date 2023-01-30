@@ -1,5 +1,5 @@
 services:
-  qc.sty_breezy-green-olm:
+  qc.sty_scaly-azure-albatross:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
